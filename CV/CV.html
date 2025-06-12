@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - CV Personal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e9ecef;
+        }
+        .navbar-dark {
+            background-color: #212529 !important;
+        }
+        .card-dark {
+            background-color: #2d3748;
+            border: 1px solid #4a5568;
+            color: #e9ecef;
+        }
+        .card-dark .card-body {
+            color: #e9ecef !important;
+        }
+        .card-dark h3,
+        .card-dark h4,
+        .card-dark h5,
+        .card-dark p,
+        .card-dark span {
+            color: #e9ecef !important;
+        }
+        .bg-dark-custom {
+            background-color: #2d3748;
+        }
+        .text-primary-custom {
+            color: #64b5f6 !important;
+        }
+        .btn-outline-primary-custom {
+            color: #64b5f6;
+            border-color: #64b5f6;
+        }
+        .btn-outline-primary-custom:hover {
+            background-color: #64b5f6;
+            border-color: #64b5f6;
+            color: #212529;
+        }
+        .carousel-dark .carousel-control-prev-icon,
+        .carousel-dark .carousel-control-next-icon {
+            filter: invert(1);
+        }
+        .form-control:focus {
+            background-color: #2d3748;
+            border-color: #64b5f6;
+            color: #e9ecef;
+            box-shadow: 0 0 0 0.2rem rgba(100, 181, 246, 0.25);
+        }
+        .form-control {
+            background-color: #2d3748;
+            border-color: #4a5568;
+            color: #e9ecef;
+        }
+        .form-label {
+            color: #e9ecef !important;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #212529 0%, #2d3748 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        /* Asegurar que todos los textos en carouseles sean blancos */
+        .carousel-item .card-body p,
+        .carousel-item .card-body h3 {
+            color: #e9ecef !important;
+        }
+        /* Corregir colores específicos que podrían aparecer en negro */
+        .text-white {
+            color: #e9ecef !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary-custom" href="#inicio">
+                <i class="fas fa-code me-2"></i>Mi Portafolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="https://pbs.twimg.com/profile_images/1764106224969080832/-q2KUjYs_400x400.jpg" class="rounded-circle mb-4" alt="Foto de perfil" style="width: 280px; height: 280px; object-fit: cover;">
+                    <h1 class="display-4 fw-bold mb-3">Oscar Adahir Garcia Sanchez</h1>
+                    <h2 class="h3 text-primary-custom mb-4">Desarrollador Full Stack</h2>
+                    <p class="lead mb-4">Especializado en crear experiencias web modernas y funcionales con tecnologías de vanguardia.</p>
+                    <div class="d-flex justify-content-center gap-3 mb-4">
+                        <a href="https://github.com/osaradahir" class="btn btn-outline-primary-custom btn-lg">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section-padding bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Sobre Mí</h2>
+                    <div class="border-bottom border-primary w-25 mx-auto mb-4" style="border-width: 3px !important;"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card card-dark shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <img src="https://pbs.twimg.com/profile_images/1764106224969080832/-q2KUjYs_400x400.jpg" class="img-fluid rounded shadow" alt="Imagen de perfil">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="text-primary-custom mb-3">Desarrollador Backend</h3>
+                                    <p class="mb-4">Con más de 2 años de experiencia en desarrollo web, me especializo en generar soluciones digitales innovadoras que combinan funcionalidad excepcional con diseño atractivo.</p>
+                                    
+                                    <h4 class="h5 text-primary-custom mb-3">Habilidades Técnicas</h4>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fab fa-html5 text-danger me-2 fs-4"></i>
+                                                <span>HTML5 & CSS3</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fab fa-js-square text-warning me-2 fs-4"></i>
+                                                <span>JavaScript</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fab fa-react text-info me-2 fs-4"></i>
+                                                <span>React & Node.js</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-database text-success me-2 fs-4"></i>
+                                                <span>MySQL & MongoDB</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 28px; margin-right: 8px; vertical-align: middle;">
+                                                <span>Python & Django</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <a href="#contacto" class="btn btn-outline-primary-custom">
+                                            <i class="fas fa-envelope me-2"></i>Contáctame
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section-padding bg-dark-custom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Proyectos Destacados</h2>
+                    <div class="border-bottom border-primary w-25 mx-auto mb-4" style="border-width: 3px !important;"></div>
+                    <p class="lead">Algunos de mis trabajos más recientes y destacados</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="proyectosCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card card-dark shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="https://codewithrandom.com/wp-content/uploads/2022/10/Header-1024x528.jpg" class="img-fluid rounded-start h-100 object-fit-cover" style="height: 300px; width: 100%; object-fit: cover;" alt="Proyecto 1">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body p-4">
+                                                <h3 class="text-primary-custom mb-3">E-commerce Moderno</h3>
+                                                <p class="mb-3">Plataforma de comercio electrónico completa desarrollada con React y Node.js, con sistema de pagos integrado y panel administrativo.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge bg-primary me-2">React</span>
+                                                    <span class="badge bg-success me-2">Node.js</span>
+                                                    <span class="badge bg-warning me-2">MongoDB</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card-dark shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center" style="background:#23272b; min-height:300px;">
+                                            <img src="https://cdn-www.stelorder.com/wp-content/uploads/2024/01/blog-mejores-gestor-tareas.png" class="img-fluid rounded-start object-fit-cover" style="height: 300px; width: 100%; max-width: 100%; object-fit: cover; aspect-ratio: 16/9; background: #23272b;" alt="Proyecto 2">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body p-4">
+                                                <h3 class="text-primary-custom mb-3">Gestor de Tareas</h3>
+                                                <p class="mb-3">Aplicación web para gestión de proyectos y tareas con funcionalidades de colaboración en tiempo real y notificaciones.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge bg-info me-2">Vue.js</span>
+                                                    <span class="badge bg-secondary me-2">Express</span>
+                                                    <span class="badge bg-danger me-2">Socket.io</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card-dark shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center" style="background:#23272b; min-height:300px;">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GXaPUlx66WQ1Smyn1b0w7zkSiboZNwSfOw&s" class="img-fluid rounded-start object-fit-cover" style="height: 300px; width: 100%; max-width: 100%; object-fit: cover; aspect-ratio: 16/9; background: #23272b;" alt="Proyecto 3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body p-4">
+                                                <h3 class="text-primary-custom mb-3">Dashboard Analytics</h3>
+                                                <p class="mb-3">Panel de control con visualización de datos en tiempo real, gráficos interactivos y reportes automatizados para análisis empresarial.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge bg-primary me-2">React</span>
+                                                    <span class="badge bg-warning me-2">D3.js</span>
+                                                    <span class="badge bg-success me-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' style='height:18px;vertical-align:middle;margin-right:4px;'>Python</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Contacto</h2>
+                    <div class="border-bottom border-primary w-25 mx-auto mb-4" style="border-width: 3px !important;"></div>
+                    <p class="lead">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-dark shadow-lg">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-outline-primary-custom btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card card-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <i class="fas fa-envelope text-primary-custom fs-2 mb-3"></i>
+                            <h5 class="text-primary-custom">Email</h5>
+                            <p class="mb-0">og927876@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card card-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <i class="fas fa-phone text-primary-custom fs-2 mb-3"></i>
+                            <h5 class="text-primary-custom">Teléfono</h5>
+                            <p class="mb-0">+52 55 1234 5678</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card card-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <i class="fas fa-map-marker-alt text-primary-custom fs-2 mb-3"></i>
+                            <h5 class="text-primary-custom">Ubicación</h5>
+                            <p class="mb-0">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-custom py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-primary-custom">
+                            <i class="fab fa-github fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Destacar el enlace activo en la navegación
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
